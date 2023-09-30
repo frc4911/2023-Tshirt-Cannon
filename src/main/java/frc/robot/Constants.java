@@ -13,19 +13,6 @@ package frc.robot;
  * constants are needed, to reduce verbosity.
  */
 public final class Constants {
-  public static final int DRIVER_CONTROLLER_PORT = 0;
 
-  public static final int FRONT_RIGHT_DRIVE = 10;
-  public static final int MIDDLE_RIGHT_DRIVE = 11;
-  public static final int BACK_RIGHT_DRIVE = 12;
-  public static final int FRONT_LEFT_DRIVE = 9;
-  public static final int MIDDLE_LEFT_DRIVE = 8;
-  public static final int BACK_LEFT_DRIVE = 7;
-  
-	public static final double WHEEL_DIAMETER = 7.65;
-	public static final double GEAR_RATIO = 3.2;
-	public static final double ENCODER_PULSE_PER_ROTATION = 770;
-	public static final double ENCODER_DISTANCE_PER_PULSE = WHEEL_DIAMETER * Math.PI / ENCODER_PULSE_PER_ROTATION;
-
-    public static final int LONG_CAN_TIMEOUTS_MS = 100;
+  public static final int LONG_CAN_TIMEOUTS_MS = 100;
 }

@@ -1,9 +1,6 @@
 package frc.robot;
 
-import frc.robot.subsystems.DriveSubsystem;
-
 import edu.wpi.first.wpilibj2.command.Command;
-import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 
 /**
  * This class is where the bulk of the robot should be declared. Since Command-based is a
@@ -13,19 +10,16 @@ import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
  */
 public class RobotContainer {
 
-  private final CommandXboxController driverController =
-      new CommandXboxController(Constants.DRIVER_CONTROLLER_PORT);
+  // put controller here
 
-  private final DriveSubsystem driveSubsystem = new DriveSubsystem();
+  // put subsystems here
 
   public RobotContainer() {
     configureBindings();
   }
 
   private void configureBindings() {
-    driveSubsystem.setDefaultCommand(
-      driveSubsystem.createDefaultCommand(driverController::getLeftY, driverController::getRightX)
-    );
+    // setup controller
   }
 
   /**
@@ -34,7 +28,7 @@ public class RobotContainer {
    * @return the command to run in autonomous
    */
   public Command getAutonomousCommand() {
-    // TODO something dumb, like a spin
+    // TODO create auto command
     return null;
   }
 }
