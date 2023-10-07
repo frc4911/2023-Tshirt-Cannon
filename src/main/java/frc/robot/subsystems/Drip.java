@@ -1,5 +1,7 @@
 package frc.robot.subsystems;
 
-public class Drip {
+import edu.wpi.first.wpilibj2.command.SubsystemBase;
+
+public class Drip extends SubsystemBase {
     
 }
